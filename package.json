@@ -1,6 +1,6 @@
 {
   "name": "mdast-lint-blank-lines-1-0-2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title",
   "author": "Victor Felder <victorfelder@gmail.com>",
   "repository": {
@@ -27,5 +27,5 @@
     "url": "https://github.com/vhf/mdast-lint-blank-lines-1-0-2/issues"
   },
   "homepage": "https://github.com/vhf/mdast-lint-blank-lines-1-0-2#readme",
-  "main": "dist/index.js"
+  "main": "dist/blank-lines.js"
 }
