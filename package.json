@@ -1,0 +1,31 @@
+{
+  "name": "mdast-lint-blank-lines-1-0-2",
+  "version": "0.1.0",
+  "description": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title",
+  "author": "Victor Felder <victorfelder@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vhf/mdast-lint-blank-lines-1-0-2.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mdast-util-position": "^1.0.0",
+    "unist-util-visit": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-react": "^3.11.3"
+  },
+  "scripts": {
+    "build": "babel lib -d dist"
+  },
+  "bugs": {
+    "url": "https://github.com/vhf/mdast-lint-blank-lines-1-0-2/issues"
+  },
+  "homepage": "https://github.com/vhf/mdast-lint-blank-lines-1-0-2#readme",
+  "main": "dist/index.js"
+}
