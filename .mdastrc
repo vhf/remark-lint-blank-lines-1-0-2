@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "mdast-lint": {
+      "external": ["mdast-lint-blank-lines-1-0-2"]
+    }
+  }
+}
