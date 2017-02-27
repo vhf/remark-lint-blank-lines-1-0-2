@@ -9,8 +9,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "unist-util-position": "^3.0.0",
+    "unified-lint-rule": "^1.0.0",
     "unist-util-generated": "^1.1.0",
+    "unist-util-position": "^3.0.0",
     "unist-util-visit": "^1.0.0"
   },
   "devDependencies": {
