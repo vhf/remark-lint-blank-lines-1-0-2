@@ -4,10 +4,10 @@ This [remark-lint](https://github.com/wooorm/remark-lint) rule was created for [
 
 This rule ensures that a file has
 
-- 2 empty lines between last link and new section
-- 1 empty line between heading & first link of its section
-- 0 empty line between two list items
-- 1 empty line at the end of each .md file
+-   2 empty lines between last link and new section
+-   1 empty line between heading & first link of its section
+-   0 empty line between two list items
+-   1 empty line at the end of each .md file
 
 ```Text
 <!-- Invalid -->
