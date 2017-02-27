@@ -1,7 +1,8 @@
 'use strict';
 
 var visit = require('unist-util-visit');
-var position = require('mdast-util-position');
+var generated = require('unist-util-generated');
+var position = require('unist-util-position');
 
 function isApplicable(node) {
   return ['paragraph', 'heading', 'list'].indexOf(node.type) !== -1;
@@ -11,7 +12,7 @@ function blankLines(ast, file, preferred, done) {
   visit(ast, function (node, index, parent) {
     var next = parent && parent.children[index + 1];
 
-    if (position.generated(node)) {
+    if (generated(node)) {
       return;
     }
 
