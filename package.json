@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-blank-lines-1-0-2",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title",
   "author": "Victor Felder <victorfelder@gmail.com>",
   "repository": {
