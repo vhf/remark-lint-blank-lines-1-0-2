@@ -1,17 +1,19 @@
 'use strict';
 
+var rule = require('unified-lint-rule');
 var visit = require('unist-util-visit');
-var position = require('mdast-util-position');
+var generated = require('unist-util-generated');
+var position = require('unist-util-position');
 
 function isApplicable(node) {
   return ['paragraph', 'heading', 'list'].indexOf(node.type) !== -1;
 }
 
-function blankLines(ast, file, preferred, done) {
-  visit(ast, function (node, index, parent) {
+function blankLines(tree, file) {
+  visit(tree, function (node, index, parent) {
     var next = parent && parent.children[index + 1];
 
-    if (position.generated(node)) {
+    if (generated(node)) {
       return;
     }
 
@@ -31,10 +33,6 @@ function blankLines(ast, file, preferred, done) {
       }
     }
   });
-
-  done();
 }
 
-module.exports = {
-  'blank-lines-1-0-2': blankLines
-};
+module.exports = rule('remark-lint:blank-lines-1-0-2', blankLines);
